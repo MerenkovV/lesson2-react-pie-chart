@@ -1,0 +1,24 @@
+.modal {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  transform: translateX(100%);
+  width: 90px;
+  height: 40px;
+  border-radius: 6px;
+  transition-duration: 400ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-open {
+    transform: translateX(-30%);
+  }
+
+  &__text {
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 1px 0 1px #747474, 0 1px 1px #747474, -1px 0 1px #747474,
+      0 -1px 1px #747474;
+  }
+}
